@@ -1,0 +1,60 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    min-height: 0px;
+    min-width: 0px;
+}
+
+.nav-shell {
+    display: none;
+}
+
+.foot {
+    display: none;
+}
+
+.main {
+    width: 100%;
+    padding: 17px 0 15px;
+}
+
+.main .text_span {
+    width: 75%;
+    margin-left: 10px;
+    height: 42px;
+}
+
+.main .text_span_focus {
+    width: 75%;
+    margin-left: 10px;
+    height: 42px;
+}
+
+.main .text_span_focus {
+    width: 75%;
+    height: 42px;
+}
+
+.main #input_div #baidu_text {
+    width: 85%;
+    height: 85%;
+}
+
+.main .button_span {
+    width: 20%;
+    height: 44px;
+    float: left;
+}
+
+.main .button_span .baidu_bnt_onmouseover {
+    height: 100%;
+    width: 100%;
+}
+
+.main .button_span .baidu_bnt_onmouseout {
+    height: 100%;
+    width: 100%;
+}
