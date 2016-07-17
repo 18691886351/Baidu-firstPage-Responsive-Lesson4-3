@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>百度一下，你就知道了</title>
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="shortcut icon" href="./static/images/favicon.ico">
+</head>
+
+<body>
+    <!--导航以及导航菜单-->
+    <div class="nav-shell">
+        <div class="nav">
+            <ul>
+                <li><a class="nav_a" href="http://www.nuomi.com/?cid=002540">糯米</a></li>
+                <li><a class="nav_a" href="http://news.baidu.com/">新闻</a></li>
+                <li><a class="nav_a" href="http://www.hao123.com/">hao123</a></li>
+                <li><a class="nav_a" href="http://map.baidu.com/">地图</a></li>
+                <li><a class="nav_a" href="http://v.baidu.com/">视频</a></li>
+                <li><a class="nav_a" href="http://tieba.baidu.com/">贴吧</a></li>
+                <li><a class="nav_a" href="https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F">登录</a></li>
+                <li class="setting" onmouseover="settingMenuHideOrdisplay()" onmouseout="settingMenuHideOrdisplay()">
+                    <a class="nav_a" href="#">设置</a>
+                    <div id="setting_menu" class="setting_menu_hide">
+                        <div class="row">
+                            <img src="./static/images/triangular_16px_1168028_easyicon.net.ico" />
+                        </div>
+                        <div class="setting_menu_content">
+                            <ul>
+                                <li class="menu"><a href="">搜索设置</a></li>
+                                <li class="menu"><a href="">高级搜索</a></li>
+                                <li class="menu"><a href="">关闭预测</a></li>
+                                <li class="menu"><a href="">搜索历史</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <!--  -->
+                <li class="products" onmouseover="productsMenuHideOrdisplay()" onmouseout="productsMenuHideOrdisplay()">
+                    <a id="products_a" href="">更多产品</a>
+                    <div id="products_menu" class="products_menu_hide">
+                        <ul>
+                            <li id="menu_top"><a href="">更多产品</a></li>
+                            <li class="menu">
+                                <a class="products_menu_a" href="http://music.baidu.com/">
+                                    <div id="music_icon"></div>
+                                    <div>音乐</div>
+                                </a>
+                            </li>
+                            <li class="menu">
+                                <a class="products_menu_a" href="http://image.baidu.com/">
+                                    <div id="pic_icon"></div>
+                                    <div>图片</div>
+                                </a>
+                            </li>
+                            <li class="menu">
+                                <a class="products_menu_a" href="http://zhidao.baidu.com/">
+                                    <div id="zhidao_icon"></div>
+                                    <div>知道</div>
+                                </a>
+                            </li>
+                            <li class="menu">
+                                <a class="products_menu_a" href="http://wenku.baidu.com/">
+                                    <div id="wenku_icon"></div>
+                                    <div>文库</div>
+                                </a>
+                            </li>
+                            <li class="menu">
+                                <a class="products_menu_a" href="http://top.baidu.com/">
+                                    <div id="wenku_icon"></div>
+                                    <div>文库</div>
+                                </a>
+                            </li>
+                            <li class="menu">
+                                <a class="products_menu_a" href="http://e.baidu.com/?refer=888">
+                                    <div id="tuiguang_icon"></div>
+                                    <div>百度推广</div>
+                                </a>
+                            </li>
+                            <li class="menu"><a href="https://www.baidu.com/more/">全部产品>></a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--主页图片以及搜索输入框-->
+    <div class="main">
+        <div class="logo">
+            <img src="./static/images/bd_logo1.png">
+        </div>
+        <form action="https://www.baidu.com/s">
+            <div id="input_div" class="text_span">
+                <input id="baidu_text" type="text" onfocus="changeInputParentBorderColor()" onblur="changeInputParentBorderColor()" name="wd" />
+                <input type="hidden" name="cl" value="3" />
+                <input type="hidden" name="ie" value="utf-8">
+                <span id="camera" onmouseover="cameramouseoverOrOut()" onmouseout="cameramouseoverOrOut()" class="camera_onmouseout"></span>
+            </div>
+            <div class="button_span">
+                <input onmouseover="baiduBntOnmouseoverOrOut()" onmouseout="baiduBntOnmouseoverOrOut()" id="baidu_bnt" class="baidu_bnt_onmouseout" type="submit" value="百度一下" />
+            </div>
+        </form>
+    </div>
+    <!--二维码以及版权-->
+    <div class="foot">
+        <div class="foot-warp">
+            <div class="qrcode-img">
+            </div>
+            <div class="qrcode-text">
+                <b>手机百度</b>
+                <p>快人一步</p>
+            </div>
+            <div class="qrcode-img2">
+            </div>
+            <dir class="qrcode-text">
+                <b>百度糯米</b>
+                <p>一元大餐</p>
+            </dir>
+            <div class="right">
+                <div class="about">
+                    <a href="https://www.baidu.com/cache/sethelp/help.html" target="_blank">把百度设为主页</a>
+                    <!--
+                --><span></span><a href="http://home.baidu.com/">关于百度</a>
+                    <!--
+                --><span></span><a href="http://ir.baidu.com/">About&nbsp;Baidu</a>
+                </div>
+                <div class="help">
+                    <span>©2016Baidu</span>
+                    <span><a href="http://www.baidu.com/duty/">使用百度前必读</a>&nbsp;</span>
+                    <!--
+                --><span><a href="http://jianyi.baidu.com/">意见反馈</a></span>
+                    <!--
+                --><span>京ICP证030173号</span>
+                    <span class="icrlogo"></span>
+                </div>
+                <span class="c-icon-jgwablo"></span>
+                <!--
+                --><span>京公网安备11000002000001号</span>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="./static/js/index.js"></script>
+<!-- 在IE6下处理png图片无法透明问题-->
+<!--[if IE 6]>
+        <script src="./static/js/DD_belatedPNG_0.0.8a-min.js"></script>
+        <script type="text/javascript">DD_belatedPNG.fix('form span');</script>    
+<![endif]-->
+</html>
