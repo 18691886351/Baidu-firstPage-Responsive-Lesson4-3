@@ -1,6 +1,7 @@
 /*
 为了保证更好的兼容性去掉大部分css3特性
 */
+
 * {
     padding: 0;
     margin: 0;
@@ -10,11 +11,13 @@ html {
     height: 100%;
 }
 
+
 /*
 1.ie6不支持min-height,min-width属性
 2.behavior: url的路径计算是从html开始的。
 但是针对button,span的hover在ie6下还是不生效
 */
+
 body {
     font: 12px arial;
     min-height: 580px;
@@ -27,8 +30,22 @@ body {
     margin-top: 20px;*/
 }
 
+/*
+默认为PC版本，隐藏.mobile
+*/
+.mobile {
+    display: none;
+}
+/*
+默认为PC版本，显示.pc
+*/
+.pc {
+    display: block;
+}
+
 
 /*logo，搜索栏*/
+
 .main {
     margin: 0 auto;
     width: 650px;
@@ -47,6 +64,7 @@ body {
 
 
 /*搜索栏的外边框*/
+
 .main .text_span {
     border: 1px solid #b6b6b6;
     background: #fff;
@@ -64,6 +82,7 @@ body {
 
 
 /*搜索栏的外边框 获取焦点*/
+
 .main .text_span_focus {
     border: 1px solid #4791ff;
     background: #fff;
@@ -99,7 +118,8 @@ body {
     height: 16px;
     width: 18px;
     background: #fff url(../images/soutu_icons_sample_6a1e1619.png) no-repeat;
-    background-position: -229px 0px; /*background-position 必须出现在background之后*/
+    background-position: -229px 0px;
+    /*background-position 必须出现在background之后*/
 }
 
 .main .camera_onmouseover {
@@ -113,7 +133,7 @@ body {
     cursor: pointer;
 }
 
-.main .button_span .baidu_bnt_onmouseover{
+.main .button_span .baidu_bnt_onmouseover {
     border-bottom: 1px solid #2868c8;
     -moz-box-shadow: 1px 1px 1px #ccc;
     -webkit-box-shadow: 1px 1px 1px #ccc;
@@ -144,11 +164,10 @@ body {
     font-size: 15px;
     border: 0;
     border-bottom: 1px solid #2d78f4;
-    _margin-left:-1px;
+    _margin-left: -1px;
 }
 
-
-.nav-shell{
+.nav-shell {
     width: 100%;
     height: 44px;
 }
@@ -188,6 +207,7 @@ body {
     display: block;
     position: relative;
 }
+
 .nav #setting_menu .row {
     height: 10px;
     width: 80px;
@@ -200,14 +220,14 @@ body {
     height: 100px;
     border: 1px solid #b6b6b6;
     box-shadow: 5px 5px 2px #aaaaaa;
-    -moz-box-shadow:5px 5px 2px #aaaaaa;
-    -webkit-box-shadow:5px 5px 2px #aaaaaa;
+    -moz-box-shadow: 5px 5px 2px #aaaaaa;
+    -webkit-box-shadow: 5px 5px 2px #aaaaaa;
     text-align: center;
 }
 
 .nav #setting_menu .menu {
     text-align: center;
-    margin:0;
+    margin: 0;
 }
 
 .nav #setting_menu .menu a {
@@ -237,9 +257,12 @@ body {
 .nav .setting_menu_show {
     top: 15px;
     position: absolute;
-    *left:0px;  /* ie7 */
-    _top:20px;  /* ie6 */
-    _left:0px;  /* ie6 */
+    *left: 0px;
+    /* ie7 */
+    _top: 20px;
+    /* ie6 */
+    _left: 0px;
+    /* ie6 */
 }
 
 #products_a {
