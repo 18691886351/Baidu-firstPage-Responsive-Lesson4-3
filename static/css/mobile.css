@@ -8,6 +8,15 @@ a:hover,
 a:visited {
     display: block;
     text-decoration: none;
+    color: #666;
+}
+
+ul li {
+    list-style: none;
+}
+
+div {
+    box-sizing: border-box;
 }
 
 
@@ -26,12 +35,14 @@ a:visited {
 
 .mobile {
     display: block;
+    background: #eeeff0;
+    padding: 10px;
+    width: 100%;
 }
 
 .mobile .header {
     width: 100%;
     position: relative;
-    padding: 5px;
     height: 54px;
 }
 
@@ -43,7 +54,7 @@ a:visited {
 
 .mobile .header .user-info {
     float: right;
-    margin-right:20px;
+    padding-right: 20px;
 }
 
 .mobile .header .weather .weather-num {
@@ -81,7 +92,7 @@ a:visited {
 
 .mobile .main form .text_span {
     height: 42px;
-    width: 80%;
+    width: 75%;
     border: 1px solid #b6b6b6;
     background: #fff;
 }
@@ -100,7 +111,7 @@ a:visited {
 }
 
 .mobile .main form .button_span {
-    width: 15%;
+    width: 20%;
 }
 
 .mobile .main form .button_span .baidu_bnt {
@@ -118,10 +129,113 @@ a:visited {
     border: 0;
 }
 
+.mobile .navs {
+    width: 100%;
+    padding: 0 10px;
+}
+
+.mobile .navs .primary {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.mobile .navs .secondary-shell {
+    display: none;
+}
+
+.mobile .navs .secondary {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.mobile .navs a {
+    margin-top: 20px;
+    width: 15%;
+    text-align: center;
+}
+
+.mobile .navs a p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.mobile .my-navs {
+    margin-top:20px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    background-color:#fff;
+}
+
+.mobile .my-navs .title {
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    margin-bottom:15px;
+}
+
+.mobile .my-navs .title .title-text {
+    display: block;
+    font-size: 16px;
+    color: #666;
+    float: left;
+}
+
+.mobile .my-navs .title i {
+    display: block;
+    float: right;
+}
+
+.mobile .my-navs .title .edite {
+    display: none;
+    position: absolute;
+    border: 1px solid #d9dde2;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, .1);
+    background: #fff;
+    text-align: center;
+    width: 91px;
+    right: 0px;
+    top: 40px;
+}
+
+.mobile .my-navs .title .edite li {
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 15px;
+    line-height: 45px;
+    color: #262626;
+}
+
+.mobile .my-navs .my-navs-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left:30px;
+}
+
+.mobile .my-navs .my-navs-content a {
+    width: 20%;
+    margin-bottom:20px;
+}
+
+.mobile .my-navs .my-navs-content a span{
+    color:black
+}
+
 .iconfont {
     font-family: "iconfont" !important;
     font-size: 25px;
     color: #a9b7b7;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.iconfont2 {
+    font-family: "iconfont" !important;
+    font-size: 25px;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
     -webkit-text-stroke-width: 0.2px;
