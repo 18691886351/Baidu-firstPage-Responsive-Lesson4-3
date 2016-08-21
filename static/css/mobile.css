@@ -217,6 +217,7 @@ div {
 .mobile .my-navs .my-navs-content a {
     width: 20%;
     margin-bottom:20px;
+    line-height:27px;
 }
 
 .mobile .my-navs .my-navs-content a span{
